@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="2.5" method="upgrade">
+	<name>Clothes Fitting for Joomshopping</name>
+	<author>Andrey M</author>
+	<creationDate>July 2019</creationDate>
+	<copyright>Copyright (c) 2019 Andrey M. All rights reserved.</copyright>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0.1</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description></description>
+	<files>
+		<filename module="mod_jshopping_clothes_fitting">mod_jshopping_clothes_fitting.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>element</folder>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+	</files>
+    
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_jshopping_clothes_fitting.ini</language>
+		<language tag="ru-RU">language/ru-RU.mod_jshopping_clothes_fitting.ini</language>
+	</languages>	
+ 
+  	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_jshopping_clothes_fitting/element/">			
+				<field type="header" default="MOD_JSHOP_CLOTHES_MAIN_PARAMS_HEADER" />
+				<field name="moduleclass_sfx" type="text" label="MOD_JSHOP_CLOTHES_MODULE_CLASS_SUFFIX" />
+				<field name="getTemplate" type="moduletemplate" modulename="mod_jshopping_clothes_fitting" default="Default" label="MOD_JSHOP_CLOTHES_SELECT_SUBTEMPLATE" />				
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="1" label="MOD_JSHOP_CLOTHES_CACHING" description="MOD_JSHOP_CLOTHES_CACHING_DESC">
+					<option value="1">MOD_JSHOP_CLOTHES_USE_GLOBAL</option>
+					<option value="0">MOD_JSHOP_CLOTHES_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="MOD_JSHOP_CLOTHES_CACHE_TIME_LABEL" description="MOD_JSHOP_CLOTHES_CACHE_TIME_DESC"/>
+			</fieldset>
+		</fields>
+	</config>	  
+</extension>

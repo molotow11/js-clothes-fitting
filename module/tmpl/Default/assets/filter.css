@@ -1,0 +1,43 @@
+/**
+ * @package     Joomshopping Clothes Fitting
+ *
+ * @copyright   Copyright (C) 2019 Joomcar extensions. All rights reserved.
+ * @license     GNU General Public License version 2 or later.
+ */
+
+.JsClothesFittingContainer { text-align: center; }
+.JsClothesFittingContainer .loading img { width: 30px; }
+.JsClothesFittingContainer .loading { display: none; } /* initial state */
+.JsClothesFittingContainer .slider-container { display: none; } /* initial state */
+.JsClothesFittingContainer .slider-container img { height: 80px; }
+.JsClothesFittingContainer .slide { float: left; }
+.JsClothesFittingContainer .slide img { display: block; margin: 0 auto; cursor: pointer; }
+.JsClothesFittingContainer .slide span { display: block; text-align: center; }
+.human-figure { position: relative; }
+.human-figure img { height: 450px; }
+.slick-next, .slick-prev {
+	background: #777 !important;
+    border-radius: 10px;
+	box-shadow: 1px 1px 5px #000;
+}
+
+.clothes-place-top { 
+	position: absolute;
+    width: 130px;
+    height: 170px;
+    left: 50%; 
+	top: 15%;
+	transform: translate(-50%, 0%);
+	opacity: 0.7;
+}
+
+.clothes-place-bottom { 
+	position: absolute;
+    width: 130px;
+    height: 170px;
+    left: 50%;
+    bottom: 23%;
+    transform: translate(-50%, 0%);
+    opacity: 0.7;
+}
+

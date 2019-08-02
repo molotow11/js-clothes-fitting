@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<extension type="package" version="3.0" method="upgrade">
+	<name>Joomshopping Clothes Fitting Package</name>
+	<author>Andrey Miasoedov</author>
+	<creationDate>July 2019</creationDate>
+	<packagename>js_clothes_fitting</packagename>
+	<version>1.0.1</version>
+	<packager>Joomcar Team</packager>
+	<packagerurl>http://joomcar.net</packagerurl>
+	<description>Clothes fitting module for Joomshopping shops</description>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<scriptfile>pkg_script.php</scriptfile>
+	<files>
+		<file type="module" id="module" client="site">module.zip</file>
+		<file type="plugin" id="plugin" group="system">plugin.zip</file>
+	</files>
+</extension>
